@@ -43,6 +43,7 @@ jobs:
           command: |
             nvm install v14.16
             nvm use v14.16
+            npm install --global yarn
             yarn --version
             yarn start
 
