@@ -34,7 +34,9 @@ jobs:
             npm --version
       - run:
           name: Check version
-          command: node --version
+          command: |
+            node --version
+            npm install
 
 workflows:
   # Below is the definition of your workflow.
