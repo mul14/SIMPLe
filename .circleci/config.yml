@@ -19,6 +19,8 @@ jobs:
     # CircleCI will report the results back to your VCS provider.
     steps:
       - checkout
+      # - node/install-packages:
+      #     pkg-manager: yarn
       - run:
           name: NVM install
           command: |
@@ -36,13 +38,15 @@ jobs:
     # CircleCI will report the results back to your VCS provider.
     steps:
       - checkout
+      # - node/install-packages:
+      #     pkg-manager: yarn
       - run:
           name: NVM install
           command: |
             nvm install v14.16
             nvm use v14.16
-            node --version
             npm --version
+            npm i -g yarn
             yarn --version
             yarn start
 
