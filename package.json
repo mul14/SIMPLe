@@ -10,10 +10,11 @@
     "build:windows": "electron-builder --windows",
     "build:linux": "electron-builder --linux"
   },
-  "devDependencies": {
-    "electron-builder": "^22.10.5"
-  },
   "dependencies": {
+
+  },
+  "devDependencies": {
+    "electron-builder": "^22.10.5",
     "electron": "^12.0.8"
   }
 }
