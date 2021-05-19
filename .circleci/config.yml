@@ -17,20 +17,17 @@ jobs:
       - image: cimg/node:14.16
     steps:
       - checkout
-      # - node/install-packages:
-      #     pkg-manager: yarn
+      - node/install-packages:
+          pkg-manager: yarn
       - run:
           name: NVM install
           command: |
-            yarn install
-            yarn start
+            # yarn install
             yarn build:linux
 
   windows_build:
     executor:
       name: win/default
-    # Then run your tests!
-    # CircleCI will report the results back to your VCS provider.
     steps:
       - checkout
       # - node/install-packages:
@@ -40,11 +37,10 @@ jobs:
           command: |
             nvm install v14.16
             nvm use v14.16
-            command -v npm
-            npm i -g yarn
-            yarn --version
+            # command -v npm
+            # npm i -g yarn
+            # yarn --version
             yarn install
-            yarn start
             yarn build:windows
 
 workflows:
