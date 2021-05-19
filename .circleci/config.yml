@@ -32,11 +32,13 @@ jobs:
             nvm use v14.16
             node --version
             npm --version
+            npm start
       - run:
           name: Check version
           command: |
             node --version
             npm install
+            npm start
 
 workflows:
   # Below is the definition of your workflow.
