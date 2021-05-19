@@ -5,6 +5,11 @@
     "node": "^14.16"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build:windows": "electron-builder --windows",
+    "build:linux": "electron-builder --linux"
+  },
+  "devDependencies": {
+    "electron-builder": "^22.10.5"
   }
 }

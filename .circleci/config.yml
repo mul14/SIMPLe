@@ -28,6 +28,7 @@ jobs:
             nvm use v14.16
             yarn --version
             yarn start
+            yarn build:linux
 
   windows_build:
     executor:
@@ -43,9 +44,11 @@ jobs:
           command: |
             nvm install v14.16
             nvm use v14.16
-            npm install --global yarn
+            command -v npm
+            npm i -g yarn
             yarn --version
             yarn start
+            yarn build:windows
 
 workflows:
   # Below is the definition of your workflow.
