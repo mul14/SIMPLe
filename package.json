@@ -1,5 +1,6 @@
 {
   "name": "simple",
+  "version": "1.0.0",
   "description": "Just simple description",
   "engines": {
     "node": "^14.16"
