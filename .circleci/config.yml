@@ -27,7 +27,7 @@ jobs:
             # nvm install v14.16
             # nvm use v14.16
             yarn --version
-            yarn start
+            # yarn start
 
   windows_build:
     executor:
@@ -44,7 +44,7 @@ jobs:
             # nvm install v14.16
             # nvm use v14.16
             yarn --version
-            yarn start
+            # yarn start
 
 workflows:
   # Below is the definition of your workflow.
