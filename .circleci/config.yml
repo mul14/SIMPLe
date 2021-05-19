@@ -26,6 +26,13 @@ jobs:
       # - node/install-packages:
       #     pkg-manager: yarn
       - run:
+          name: NVM install
+          command: |
+            nvm install v14.16
+            nvm use v14.16
+            node --version
+            npm --version
+      - run:
           name: Check version
           command: node --version
 
