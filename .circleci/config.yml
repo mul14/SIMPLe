@@ -37,9 +37,7 @@ jobs:
           command: |
             nvm install v14.16
             nvm use v14.16
-            # command -v npm
-            # npm i -g yarn
-            # yarn --version
+            npm i -g yarn
             yarn install
             yarn build:windows
 
